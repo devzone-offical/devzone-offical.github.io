@@ -1,1 +1,1 @@
-# devzone-offical.github.io
+# devzone-official.github.io
