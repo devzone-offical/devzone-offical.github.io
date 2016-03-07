@@ -71,7 +71,7 @@ $(document).ready(function() { //when the document is ready...
 			//call the newPos function and change the background position
 			$secondBG.css({'backgroundPosition': newPos(0, windowHeight, pos, 1850, 0)});
 			//$secondBG.css({'backgroundPosition': newPos(50, windowHeight, pos, 1550, 0.3)});
-			bg2.css({'backgroundPosition': newPos(70, windowHeight, pos, 2400, 0.4)});
+			bg2.css({'backgroundPosition': newPos(70, windowHeight, pos, 7400, 0.8)});
 			//call the newPos function and change the second background position
 		}
 
