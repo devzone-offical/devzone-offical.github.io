@@ -12,33 +12,36 @@
 
     <!-- google web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,700' rel='stylesheet' type='text/css'>
-    
+
     <!-- CSS Styles -->
-    
+
     <!-- bootstrap css -->
     <link href="./css/bootstrap.css" rel="stylesheet">
-    
+
     <!-- custom css -->
     <link href="./css/custom.css" rel="stylesheet">
-    
+
     <!-- standart theme css -->
     <link rel="stylesheet" id="theme" href="./css/theme1.css" type="text/css" />
-    
+
     <!-- Font Awesome Icons css -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-    
+
     <!-- BxSlider and Sequence Slider css -->
     <link rel="stylesheet" href="./css/jquery.bxslider.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="./css/sequence-slider.css" />
-    
+
     <!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="./css/magnific-popup.css"> 
-    
+<link rel="stylesheet" href="./css/magnific-popup.css">
+
     <!-- Color Switch Panel css -->
     <link rel="stylesheet" href="./css/color.switch.css" type="text/css" />
-    
+
     <!-- Back to Top Button css -->
     <link rel="stylesheet" href="./css/top.css" type="text/css" />
+
+
+    <link href="./css/responsive-slider.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -50,15 +53,15 @@
 	<link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
-	
-	
+
+
 	<!-- Your Google Analytics Code Here!! -->
 
-	
+
   </head>
 
 <body>
-  
+
 <!-- START PRIMARY LAYOUT
 ======================== -->
 
@@ -67,13 +70,13 @@
 <div class="button-top" id="top-bt">
 
   <a href="#top-slider"><i class="fa fa-sort-desc fa-3x"></i></a>
-  
+
 </div>
 
 <!-- Back to Top Button END -->
 
 <!-- NAVBAR -->
-    
+
 <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
 
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="menu">
@@ -101,13 +104,13 @@
 </nav>
 
 <!-- NAVBAR END -->
-  
-<!-- SEQUENCE SLIDER Change Styles at the sequence-slider.css file --> 
+
+<!-- SEQUENCE SLIDER Change Styles at the sequence-slider.css file
 
 <div id="top-slider">
 	<div class="slider-bg"></div>
 		   <div class="container">
-		
+
            <div id="sequence">
 
 				<img class="sequence-prev" src="./img/button-previous.svg" alt="Previous Frame" />
@@ -136,103 +139,160 @@
 					<li><img src="./img/pagination-dot.svg" alt="Image" /></li>
 					<li><img src="./img/pagination-dot.svg" alt="Image" /></li>
 				</ul>
-				
+
           </div>
-          
+
     </div>
 </div>
 
-<!-- SEQUENCE SLIDER END -->
-   
+<! SEQUENCE SLIDER END -->
+<!-- Responsive slider - START -->
+<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+  <div class="slides" data-group="slides">
+    <ul>
+      <li>
+        <div class="slide-body" data-group="slide">
+          <img src="../img/slide-1.jpg">
+          <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+            <h2>Responsive slider</h2>
+            <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">With one to one swipe movement!</div>
+          </div>
+          <div class="caption img-html5" data-animate="slideAppearLeftToRight" data-delay="200">
+            <img src="../img/html5.png">
+          </div>
+          <div class="caption img-css3" data-animate="slideAppearLeftToRight">
+            <img src="../img/css3.png">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide-body" data-group="slide">
+          <img src="../img/slide-2.jpg">
+          <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+            <h2>Twitter Boostrap</h2>
+            <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Compatible!</div>
+          </div>
+          <div class="caption img-bootstrap" data-animate="slideAppearDownToUp" data-delay="200">
+            <img src="../img/bootstrap.png">
+          </div>
+          <div class="caption img-twitter" data-animate="slideAppearUpToDown">
+            <img src="../img/twitter.png">
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="slide-body" data-group="slide">
+          <img src="../img/slide-3.jpg">
+          <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+            <h2>Custom animations</h2>
+            <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">For any caption you use!</div>
+          </div>
+          <div class="caption img-jquery" data-animate="slideAppearDownToUp" data-delay="200">
+            <img src="../img/jquery.png">
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <a class="slider-control-left" href="#" data-jump="prev">Prev</a>
+  <a class="slider-control-right" href="#" data-jump="next">Next</a>
+  <div class="pages">
+    <a class="page" href="#" data-jump-to="1">1</a>
+    <a class="page" href="#" data-jump-to="2">2</a>
+    <a class="page" href="#" data-jump-to="3">3</a>
+  </div>
+</div>
+<!-- Responsive slider - END -->
+
 <!-- ABOUT US -->
-      
+
 <div id="about">
 
  <div class="container">
- 
 
-    
+
+
     <div class="center-block head">
-    
+
        <h1>About Us</h1>
        <hr class="head-border-grey">
-       
+
     </div>
-      
+
     <div class="agency col-lg-10 col-lg-offset-1 col-md-8 col-md-offset-1">
         <p></p>
          <p></p>
-        
+
     </div>
 
  </div>
 </div>
 
 <!-- ABOUT END -->
-     
+
 <!-- SERVICE -->
-     
+
 <div id="service">
 
   <div class="container">
 
     <div class="row">
-    
+
      <div class="center-block head">
-       
+
        <div class="col-lg-12 col-md-12 col-xs-12">
-     
+
         <h1>What We Do</h1>
         <hr class="head-border-white">
          <p class="subhead"></p>
        </div>
-          
+
       </div>
-      
-        <!-- SERVICE COLUMNS -->   
+
+        <!-- SERVICE COLUMNS -->
         <div class="col-lg-4 col-md-4 service">
          <div class="service-col">
-         
+
            <div class="icon-desktop rotate">
              <img src="./img/icons/webdesign.png" alt="">
            </div>
-           
+
           <h4>Web Design</h4>
           <p></p>
-          
+
          </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-4 service">
         <div class="service-col">
-        
+
           <div class="icon-wrench rotate">
             <img src="./img/icons/graphicdesign.png" alt="">
           </div>
-           
+
           <h4>Graphic Design</h4>
           <p></p>
-          
+
           </div>
         </div>
-        
+
         <div class="col-lg-4 col-md-4 service">
         <div class="service-col">
-        
+
           <div class="icon-mobile rotate">
             <img src="./img/icons/mobile.png" alt="">
            </div>
-           
+
           <h4>Mobile App</h4>
           <p></p>
-          
+
         </div>
       </div>
-      
+
       <div class="center-block service-btn">
          <p class="center"><a class="btn btn-hire btn-primary" href="#contact" role="button">Hire Us Now!</a></p>
       </div>
-      
+
      </div>
    </div>
 </div>
@@ -245,18 +305,18 @@
 
   <div class="container">
 
-    
+
       <div class="center-block head">
-      
+
         <div class="col-lg-12 col-md-12 col-xs-12">
-      
+
          <h1 class="d-grey">Our Portfolio</h1>
            <hr class="head-border-grey">
-           
+
         </div>
-      
+
       </div>
-	
+
                  <div class="filter-list">
                     <ul class="nav nav-pills">
                         <li><a class="filter" data-filter="all">All Items</a></li>
@@ -264,15 +324,15 @@
                         <li><a class="filter" data-filter="cat_2">Mobile App development</a></li>
                     </ul>
                  </div>
-                    
+
   <div class="clearfix"></div>
-  
-    <div id="Grid" class="row gallery">  
-        
+
+    <div id="Grid" class="row gallery">
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -280,17 +340,17 @@
                                  <a href="./img/portfolio/2.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/2.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-                        
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_2 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -298,17 +358,17 @@
                                  <a href="./img/portfolio/3.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/3.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_3 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -316,17 +376,17 @@
                                  <a href="./img/portfolio/4.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/4.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -334,17 +394,17 @@
                                  <a href="./img/portfolio/5.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/5.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_2 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -352,17 +412,17 @@
                                  <a href="./img/portfolio/6.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/6.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -370,17 +430,17 @@
                                  <a href="./img/portfolio/2.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/2.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -388,17 +448,17 @@
                                  <a href="./img/portfolio/3.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/3.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_3 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -406,17 +466,17 @@
                                  <a href="./img/portfolio/4.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/4.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -424,17 +484,17 @@
                                  <a href="./img/portfolio/5.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/5.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -442,17 +502,17 @@
                                  <a href="./img/portfolio/6.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/6.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_3 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -460,17 +520,17 @@
                                  <a href="./img/portfolio/2.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/2.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-              
+
               <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_2 all">
                    <div class="image">
                         <div class="overlay">
-                        
+
                            <div class="caption">
                             <h5>Thumbnail Headline</h5>
                              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -478,16 +538,16 @@
                                  <a href="./img/portfolio/3.jpg" title="ZOOM" class="magnific-popup btn btn-primary">Zoom</a>
                               </p>
                             </div>
-                           
+
                      <img class="img-responsive" src="./img/portfolio/3.jpg" alt="" />
-                     
+
                          </div>
                     </div>
               </div>
-                                      
+
            </div>
   </div>
-  
+
 </div>
 
 <!-- PORTFOLIO END -->
@@ -498,98 +558,98 @@
   <div class="container">
 
     <div class="row">
-    
+
       <div class="center-block head">
-      
+
         <div class="col-lg-12 col-md-12 col-xs-12">
-      
+
          <h1 class="">Our Team</h1>
            <hr class="head-border-white">
             <p class="subhead"></p>
-            
+
         </div>
-        
+
       </div>
-                      
-       <!-- TEAM MEMBER -->  
-        
+
+       <!-- TEAM MEMBER -->
+
         <div class="col-lg-3 col-md-3">
         <div class="team team-member1">
-        
+
           <div class="member1 rotate"></div>
-           
+
           <h5>Muneer</h5>
 
           <p class="job">CEO / Founder</p>
-          
+
           <p></p>
-          
+
           <p class="social-team">
             <a class="facebook" href=""><i class="fa fa-facebook-square fa-1-5x"></i></a>
 			<a class="twitter" href=""><i class="fa fa-twitter-square fa-1-5x"></i></a>
 			<a class="linkedin" href=""><i class="fa fa-linkedin-square fa-1-5x"></i></a>
 			<a class="pinterest" href=""><i class="fa fa-google-plus-square fa-1-5x"></i></a>
 		   </p>
-          
+
           </div>
-          
+
         </div>
-        
+
         <div class="col-lg-3 col-md-3">
         <div class="team team-member2">
-        
+
           <div class="member2 rotate"></div>
-           
+
           <h5>Siva Prakash</h5>
-          
+
           <p class="job">Developer</p>
-          
+
           <p></p>
-          
+
           <p class="social-team">
             <a class="facebook" href=""><i class="fa fa-facebook-square fa-1-5x"></i></a>
 			<a class="twitter" href=""><i class="fa fa-twitter-square fa-1-5x"></i></a>
 			<a class="linkedin" href=""><i class="fa fa-linkedin-square fa-1-5x"></i></a>
 			<a class="pinterest" href=""><i class="fa fa-google-plus-square fa-1-5x"></i></a>
 		  </p>
-          
+
           </div>
-          
+
         </div>
-        
+
         <div class="col-lg-3 col-md-3">
         <div class="team team-member3">
-        
+
           <div class="member3 rotate"></div>
-           
+
           <h5>Hari Krishnan</h5>
-          
+
           <p class="job">Developer</p>
-          
+
           <p></p>
-          
+
           <p class="social-team">
             <a class="facebook" href=""><i class="fa fa-facebook-square fa-1-5x"></i></a>
 			<a class="twitter" href=""><i class="fa fa-twitter-square fa-1-5x"></i></a>
 			<a class="linkedin" href=""><i class="fa fa-linkedin-square fa-1-5x"></i></a>
 			<a class="pinterest" href=""><i class="fa fa-google-plus-square fa-1-5x"></i></a>
 		   </p>
-          
+
           </div>
-          
+
         </div>
-        
+
         <div class="col-lg-3 col-md-3">
         <div class="team team-member4">
-        
+
           <div class="member4 rotate"></div>
-           
+
           <h5>Nagarushyanth</h5>
-          
+
           <p class="job">Developer</p>
-          
+
           <p></p>
-             
+
            <p class="social-team">
             <a class="facebook" href=""><i class="fa fa-facebook-square fa-1-5x"></i></a>
 			<a class="twitter" href=""><i class="fa fa-twitter-square fa-1-5x"></i></a>
@@ -598,7 +658,7 @@
 		   </p>
 
           </div>
-          
+
         </div>
   </div>
   </div>
@@ -613,48 +673,48 @@
 
   <div class="container">
       <div class="row">
-    
+
       <div class="center-block head">
-      
+
        <div class="col-lg-12 col-md-12 col-xs-12">
-     
+
         <h1>How We Do</h1>
         <hr class="head-border-white">
           <p class="subhead center"></p>
-          
+
        </div>
-         
+
       </div>
-      
+
       <div class="our-process">
-           
+
              <div class="process">
                 <div class="col-lg-4 process-con img1">
                    <div class="process-img rotate">
-                      <img src="./img/icons/idea.png" alt=""> 
+                      <img src="./img/icons/idea.png" alt="">
                    </div>
                    <h5>Consult</h5>
                 </div>
-                
+
                <div class="col-lg-4 process-con img2">
                  <div class="process-img rotate">
-                   <img src="./img/icons/creation.png" alt="">  
+                   <img src="./img/icons/creation.png" alt="">
                  </div>
                  <h5>Colaborate</h5>
                </div>
-               
+
                <div class="col-lg-4 process-con img3">
                  <div class="process-img rotate">
-                  <img src="./img/icons/presentation.png" alt="">   
+                  <img src="./img/icons/presentation.png" alt="">
                  </div>
                  <h5>Contribute</h5>
-               </div> 
+               </div>
             </div>
        </div>
 
    </div>
   </div>
-  
+
 </div>
 
 <!-- PROCESS END -->
@@ -667,61 +727,61 @@
 
   <div class="container">
      <div class="row">
-    
+
       <div class="center-block head">
-      
+
        <div class="col-lg-12 col-md-12 col-xs-12">
-    
+
          <h1>Get in Touch</h1>
          <hr class="head-border-grey">
-        
+
        </div>
-       
+
     </div>
-      
+
       <!-- CONTACT FORM -->
       <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 form">
       <!--FORM -->
       <form action="./contact.php" class="form-horizontal" role="form" id="contactForm" method="post" name="contactForm">
-            
+
             <div class="form-group">
-               
+
                 <div class="col-sm-12">
                 <input type="text" class="form-control input-lg" name="name" id="name" placeholder="Name*">
                 </div>
             </div>
-            
+
             <div class="form-group">
-                  
+
                     <div class="col-sm-12">
                       <input type="email" class="form-control input-lg" name="email" id="email" placeholder="Email*">
                   </div>
             </div>
-            
+
             <div class="form-group">
-                  
+
                     <div class="col-sm-12">
                       <input type="text" class="form-control input-lg" name="phone" id="phone" placeholder="Phone">
                   </div>
             </div>
-            
+
             <div class="form-group">
-                  
+
                     <div class="col-sm-12">
                       <textarea class="form-control input-lg" rows="10" name="message" id="message" placeholder="Message*"></textarea>
                   </div>
             </div>
-            
+
             <div class="control-group submit center">
                <input class="btn btn-lg btn-primary" type="submit" value="Submit">
             </div>
 
            </form>
-           
+
            <p class="d-grey requi">* Required</p>
-      
+
       </div>
-      
+
      </div>
   </div>
 </div>
@@ -742,26 +802,26 @@
 		<div class="divider-bg"></div>
 
   <div class="container">
-  
+
 	<div class="row">
         <div class="col-12-lg social-media">
-        
+
     		<div class="social-icons">
-    		
+
                 <a class="social-media facebook" href=""><i class="fa fa-facebook-square fa-8x"></i></a>
 				<a class="social-media white twitter" href=""><i class="fa fa-twitter-square fa-8x"></i></a>
 				<a class="social-media white google" href=""><i class="fa fa-google-plus-square fa-8x"></i></a>
-              
-            </div>  
-              
+
+            </div>
+
         </div>
 	</div>
-  
+
   </div>
 
 </div>
 
-<!-- SOCIAL MEDIA DIVIDER END --> 
+<!-- SOCIAL MEDIA DIVIDER END -->
 
 <!-- BOTTOM -->
 
@@ -769,41 +829,41 @@
 
   <div class="container">
      <div class="row">
-     
+
       <div class="col-lg-4 col-md-4">
         <div class="bottom-con">
-        
+
            <h5>Visit Us</h5>
            <hr class="head-border-white">
-            
+
              <div class="">
              <p><i class="fa fa-location-arrow"><span> 10 Lorum Ipsum Street</span></i></p>
              <p><i class="fa fa-map-marker"><span> 68123 Mannheim</span></i></p>
              <p><i class="fa fa-flag"><span> Germany</span></i></p>
            </div>
-            
+
         </div>
     </div>
- 
+
     <div class="col-lg-4 col-md-4">
         <div class="bottom-con">
-        
+
            <h5>Write Us</h5>
            <hr class="head-border-white">
-            
+
              <div class="">
              <p><i class="fa fa-phone"><span> +49 621 123 321 123</span></i></p>
              <p><i class="fa fa-envelope"><span> info@fabianbentz.de</span></i></p>
              <p><i class="fa fa-print"><span> +49 621 123 321 124</span></i></p>
            </div>
-            
+
         </div>
     </div>
-       
+
     <div class="col-lg-4 col-md-4">
-            
+
             <div class="bottom-con">
-    		
+
                 <h5>Newsletter</h5>
                 <hr class="head-border-white">
 
@@ -813,25 +873,25 @@
                       <input type="email" class="form-control input-md" placeholder="Enter email">
                      </div>
                 <br>
-                
+
                 <div class="control-group submit center">
                   <input type="submit" value="Subscribe Now!" class="btn btn-md btn-primary" />
                 </div>
-                    
+
               </form>
-              
-            </div> 
-            
+
+            </div>
+
     </div>
-          
+
            <div class="col-lg-12 col-md-12 footer">
                <p class="pull-right"><a href="#top-slider">Back to top</a></p>
                   <p>&copy; DevZone &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-           </div> 
-           
+           </div>
+
      </div>
   </div>
-  
+
 </div>
 
 <!-- FOOTER END -->
@@ -850,10 +910,10 @@
 
 <!-- CUSTOM JAVASCRIPT -->
 <!-- Custom Functions -->
-<script type="text/javascript" src="./js/functions.js"></script> 
+<script type="text/javascript" src="./js/functions.js"></script>
 
 <!-- Portfolio with mixitup filter and prettyphoto -->
-<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script> 
+<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
 <!-- Magnific Popup core JS file -->
 <script type="text/javascript" src="./js/magnific.js"></script>
 
@@ -870,10 +930,10 @@
 <!-- Smooth Scrolling -->
 <script type="text/javascript" src="./js/smoothscroll.js"></script>
 
-<!-- Sticky Navigation --> 
+<!-- Sticky Navigation -->
 <script type="text/javascript" src="./js/jquery.sticky.js"></script>
 
-<!-- Style Switcher --> 
+<!-- Style Switcher -->
 <script type="text/javascript" src="./js/jquery.style-switcher.js"></script>
 
 <!-- Clients Slider -->
@@ -882,6 +942,9 @@
 <!-- Retina JS -->
 <script type="text/javascript" src="./js/retina-1.1.0.min.js"></script>
 
+
+    <script src="../js/jquery.event.move.js"></script>
+    <script src="../js/responsive-slider.min.js"></script>
 
 </body>
 </html>

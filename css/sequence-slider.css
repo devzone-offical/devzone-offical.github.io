@@ -243,10 +243,12 @@ h3 {
   position: relative;
   height: auto !important;
   max-height: 568px !important;
-  width: 30%;
+  min-height: 268px;
+  width: 40%;
   min-width: 225px;
   /* prevents the slider-image from shrinking when the browser is resized */
-  max-width: 266px;
+  max-width: 1266px;
+  background-position: center;
 }
 
 .animate-in .slider-image {
@@ -279,7 +281,7 @@ h3 {
     height: 550px;
   }
   #sequence .slider-image {
-    max-height: 530px !important;
+    max-height: 330px !important;
     width: auto;
   }
 }
@@ -299,7 +301,7 @@ h3 {
     margin-top: -40px;
   }
   #sequence .slider-image {
-    max-height: 480px !important;
+    max-height: 180px !important;
     width: auto;
   }
 }
