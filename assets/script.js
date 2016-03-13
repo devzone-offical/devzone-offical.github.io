@@ -26,7 +26,6 @@ function scrollcheck(){
     var menu = document.getElementById("menu");
     var menuOffset = menu.offsetTop;
     
-    document.getElementsByTagName("footer")[0].innerHTML = aboutOffset + "<br>" + serviceOffset + "<br>" + portfolioOffset + "<br>" + contactOffset + "<br>" + registerOffset;
     
     document.getElementById("aboutButton").addEventListener("click", function(){window.scrollTo(0,aboutOffset - 100);});
     document.getElementById("serviceButton").addEventListener("click", function(){window.scrollTo(0,serviceOffset - 100);});
