@@ -96,6 +96,9 @@ header{
     margin: auto;
     margin-top: 10rem;
     border: 1px solid #E0E0E0;
+    justify-content: space-between;
+    background-color: #FFF;
+    z-index: 5;
 }
 .menu a{
     color: #FF5722;
@@ -104,6 +107,7 @@ header{
     padding: 2rem;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
     transition: background-color 0.5s;
 }
 .menu a:visited{
@@ -139,6 +143,7 @@ section{
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    opacity: 0.4;
 }
 .content h1{
     font-size: 4rem;

@@ -10,6 +10,7 @@
         <meta name="description" content="Devzone is a team of young creative developers, building software products like web applications, native device applications and services.">
         <meta name="keywords" content="devzone dev zone dev-zone startup kluniversity klu students devzoneofficial apps app development webapps webapplication website designers design webdesign">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="assets/jquery-1.12.1.min.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
         <script type="text/javascript" src="assets/script.js"></script>
     </head>
@@ -22,12 +23,12 @@
             <header>
                 <a class="logo" href="index.html"></a>
                 <div class="name">Dev<span>Zone</span></div>
-                <div class="menu">
-                    <a href="index.html#about">ABOUT</a>
-                    <a>SERVICE</a>
-                    <a>PORTFOLIO</a>
-                    <a>CONTACT</a>
-                    <a>REGISTER</a>
+                <div class="menu" id="menu">
+                    <a id="aboutButton">ABOUT</a>
+                    <a id="serviceButton">SERVICE</a>
+                    <a id="portfolioButton">PORTFOLIO</a>
+                    <a id="contactButton">CONTACT</a>
+                    <a id="registerButton">REGISTER</a>
                 </div>
                 <div class="down"></div>
             </header>
@@ -100,8 +101,6 @@
                 <div class="content" id="contact">
                     <h1>CONTACT US</h1>
                     <p></p>
-                </div>
-                <div class="content">
                     <div class="social">
                         <a href="https://www.facebook.com/" style="background-image:url(assets/images/facebook.svg)"></a>
                         <a href="https://plus.google.com/" style="background-image:url(assets/images/gplus.svg)"></a>
@@ -123,6 +122,8 @@
             
         </div>
         <!-- container - end -->
-        
+        <script>
+            init();
+        </script>
     </body>
 </html>
