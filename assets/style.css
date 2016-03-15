@@ -93,14 +93,40 @@ header{
     color: #FF5722;
     font-family: 'MuseoSans', sans-serif;
 }
+.opener{
+    position: fixed;
+    top: 7rem;
+    left: 7rem;
+    height: 5rem;
+    width: 5rem;
+    background-color: #FF5722;
+    border-radius: 1rem;
+    z-index: 6;
+    cursor: pointer;
+}
 .menu{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     margin: auto;
     margin-top: 10rem;
     border: 1px solid #E0E0E0;
     justify-content: space-between;
     background-color: #FFF;
     z-index: 5;
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+    z-index: 5;
+    border: 1px solid #E0E0E0;
+    background-color: #FFF;
 }
 .menu a{
     color: #FF5722;
@@ -118,6 +144,20 @@ header{
 .menu a:hover{
     background-color: #E0E0E0;
 }
+.mobile-menu a{
+    color: #FF5722;
+    font-size: 2rem;
+    font-weight: normal;
+    padding: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+.mobile-menu a:visited{
+    color: #FF5722;
+}
+.mobile-menu a:hover{
+    background-color: #E0E0E0;
+}
 .down{
     margin: 5rem auto;
     border: 1px solid #E0E0E0;
@@ -128,10 +168,12 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s ,opacity 0.5s;
+    cursor: pointer;
 }
 .down:hover{
     background-color: #E0E0E0;
+    opacity: 0;
 }
 /** Header - End **/
 
@@ -145,7 +187,7 @@ section{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    opacity: 0.4;
+    opacity: 1;
 }
 .content h1{
     font-size: 4rem;
@@ -294,6 +336,12 @@ footer{
     .logo{
         margin: auto;
     }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        
+    }
 }
 @media (max-width:300px) and (orientation:landscape){
     body{
@@ -346,7 +394,10 @@ footer{
         font-size: 8rem;
     }
     .menu{
-        flex-direction: column;
+        display: none;
+    }
+    .mobile-menu{
+        
     }
 }
 @media (min-width:301px) and (max-width:600px) and (orientation:landscape){

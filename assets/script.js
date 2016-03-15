@@ -1,94 +1,44 @@
 
 function init() {
-    
-    window.addEventListener("resize" , function(){scrollcheck();});
-    scrollcheck();
+    window.addEventListener("load" , function(){check_events();});
+    window.addEventListener("resize" , function(){check_events();});
+    window.addEventListener("scroll", function(){scroll_check();});
+    document.getElementById("opener").addEventListener("click", function(){open()});
 }
-
-function scrollcheck(){
-        
-    // Number of content elements
-    var about = document.getElementById("about");
-    var aboutOffset = about.offsetTop;
+function check_events(){
+    scroll_check();
+    size_check();
     
-    var service = document.getElementById("service");
-    var serviceOffset = service.offsetTop;
-    
-    var portfolio = document.getElementById("portfolio");
-    var portfolioOffset = portfolio.offsetTop;
-    
-    var contact = document.getElementById("contact");
-    var contactOffset = contact.offsetTop;
-    
-    var team = document.getElementById("team");
-    var teamOffset = team.offsetTop;
-    
-    var register = document.getElementById("register");
-    var registerOffset = register.offsetTop;
+}
+var menu = document.getElementById("menu");
+function scroll_check(){
     
     var menu = document.getElementById("menu");
-    var menuOffset = menu.offsetTop;
-    
-    
-    document.getElementById("aboutButton").addEventListener("click", function(){window.scrollTo(0,aboutOffset - 100);});
-    document.getElementById("serviceButton").addEventListener("click", function(){window.scrollTo(0,serviceOffset - 100);});
-    document.getElementById("portfolioButton").addEventListener("click", function(){window.scrollTo(0,portfolioOffset - 100);});
-    document.getElementById("contactButton").addEventListener("click", function(){window.scrollTo(0,contactOffset - 100);});
-    document.getElementById("registerButton").addEventListener("click", function(){window.scrollTo(0,registerOffset - 100);});
-    
-    $(window).scroll(function(){
-        
-        if($(this).scrollTop() > menuOffset){
-            menuAnim();
-        }
-        if($(this).scrollTop() < menuOffset){
-            menuAnimRev();
-        }
-        
-        var clearance = aboutOffset/1.4;
-        if($(this).scrollTop() > (aboutOffset - clearance)){
-            aboutAnim();
-        }
-        if($(this).scrollTop() > (serviceOffset - clearance)){
-            serviceAnim();
-        }
-        if($(this).scrollTop() > (portfolioOffset - clearance)){
-            portfolioAnim();
-        }
-        if($(this).scrollTop() > (contactOffset - clearance)){
-            contactAnim();
-        }
-        if($(this).scrollTop() > (teamOffset - clearance)){
-            teamAnim();
-        }
-        if($(this).scrollTop() > (registerOffset - clearance)){
-            registerAnim();
-        }
-    });
+    var opener = document.getElementById("opener");
+    if(menu.offsetTop < document.body.scrollTop){
+        menu.className = "mobile-menu";
+        menu.style.display = "none";
+        opener.style.display = "block";        
+            
+    }
+    else{
+        if(window.innerWidth < 600){
+        menu.className = "mobile-menu";
+        menu.style.display = "none";
+        opener.style.display = "block";
+    }
+    else{
+        menu.className = "menu";
+        menu.style.display = "flex";
+        opener.style.display = "none";
+    }
+    }
 }
-function menuAnim(){
-    $("#menu").css({"position":"fixed","margin-top":"auto","top":"0px","width":"50%","left":"50%","margin-left":"-25%"});
+
+function size_check(){
     
 }
-function menuAnimRev(){
-    $("#menu").css({"position":"relative","margin-top":"10rem","top":"auto","width":"auto","left":"auto","margin-left":"auto"});
-    
-}
-function aboutAnim(){
-    $("#about").animate({opacity:1},2000);
-}
-function serviceAnim(){
-    $("#service").animate({opacity:1},2000);
-}
-function portfolioAnim(){
-    $("#portfolio").animate({opacity:1},2000);
-}
-function contactAnim(){
-    $("#contact").animate({opacity:1},2000);
-}
-function teamAnim(){
-    $("#team").animate({opacity:1},2000);
-}
-function registerAnim(){
-    $("#register").animate({opacity:1},2000);
+
+function open(){
+    $("#menu").toggle();
 }
