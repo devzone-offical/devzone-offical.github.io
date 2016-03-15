@@ -1,6 +1,6 @@
 /* Main Style */
 
-
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @font-face {
     font-family: 'MuseoSans';
     src: url('fonts/museosans_300-webfont.eot');
@@ -84,12 +84,14 @@ header{
     color: #1976D2;
     font-size: 12rem;
     font-weight: normal;
+    font-family: 'Roboto', sans-serif;
     margin: 8rem auto;
     padding: 2rem;
     animation: view 3s;
 }
 .name span{
     color: #FF5722;
+    font-family: 'MuseoSans', sans-serif;
 }
 .menu{
     display: inline-flex;
@@ -153,10 +155,11 @@ section{
     margin-top: 4rem;
 }
 .content p{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FF5722;
     text-align: justify;
     padding: 2rem;
+    line-height: 4rem;
 }
 .card-wrap{
     display: flex;
@@ -207,6 +210,10 @@ section{
     padding: 1rem;
     text-align: justify;
 }
+.circle{
+    min-height: 30rem;
+    border: none;
+}
 
 .hover-card{
     display: flex;
@@ -240,7 +247,7 @@ section{
 }
 .hover-card div p{
     font-size: 2rem;
-    text-align: justify;
+    text-align: center;
     color: #1976D2;
 }
 .social{

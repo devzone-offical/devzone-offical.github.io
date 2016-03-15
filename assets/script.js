@@ -20,6 +20,9 @@ function scrollcheck(){
     var contact = document.getElementById("contact");
     var contactOffset = contact.offsetTop;
     
+    var team = document.getElementById("team");
+    var teamOffset = team.offsetTop;
+    
     var register = document.getElementById("register");
     var registerOffset = register.offsetTop;
     
@@ -55,13 +58,16 @@ function scrollcheck(){
         if($(this).scrollTop() > (contactOffset - clearance)){
             contactAnim();
         }
+        if($(this).scrollTop() > (teamOffset - clearance)){
+            teamAnim();
+        }
         if($(this).scrollTop() > (registerOffset - clearance)){
             registerAnim();
         }
     });
 }
 function menuAnim(){
-    $("#menu").css({"position":"fixed","margin-top":"auto","top":"0px","width":"75%","left":"50%","margin-left":"-37.5%"});
+    $("#menu").css({"position":"fixed","margin-top":"auto","top":"0px","width":"50%","left":"50%","margin-left":"-25%"});
     
 }
 function menuAnimRev(){
@@ -79,6 +85,9 @@ function portfolioAnim(){
 }
 function contactAnim(){
     $("#contact").animate({opacity:1},2000);
+}
+function teamAnim(){
+    $("#team").animate({opacity:1},2000);
 }
 function registerAnim(){
     $("#register").animate({opacity:1},2000);
