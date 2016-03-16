@@ -88,6 +88,10 @@ header{
     margin: 8rem auto;
     padding: 2rem;
     animation: view 3s;
+    text-decoration: none;
+}
+a.name:visited{
+    color: #1976D2;
 }
 .name span{
     color: #FF5722;
@@ -99,10 +103,11 @@ header{
     left: 7rem;
     height: 5rem;
     width: 5rem;
-    background-color: #FF5722;
     border-radius: 1rem;
     z-index: 6;
     cursor: pointer;
+    background-image: url(images/three.svg);
+    background-size: contain;
 }
 .menu{
     display: flex;
@@ -230,8 +235,13 @@ section{
     display: flex;
     margin: auto;
     padding: 2rem;
-    background-color: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    background-color: #FFFFFF;
     border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    height: 16rem;
+    width: 16rem;
 }
 .card div img{
     height: 12rem;
@@ -253,7 +263,7 @@ section{
     text-align: justify;
 }
 .circle{
-    min-height: 30rem;
+    min-height: 40rem;
     border: none;
 }
 
