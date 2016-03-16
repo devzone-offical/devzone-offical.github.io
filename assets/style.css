@@ -308,6 +308,27 @@ section{
     background-size: contain;
 }
 
+.join-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.join-form input , textarea{
+    font-size: 2rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 80%;
+    margin: 2rem;
+    border: 2px dashed #E0E0E0;
+}
+.join-form textarea{
+    height: 15rem;
+}
+.join-form input[type=submit]{
+    width: 40%;
+    color: #FF5722;
+}
 /** Section - End **/
 
 /** Footer - Start **/
