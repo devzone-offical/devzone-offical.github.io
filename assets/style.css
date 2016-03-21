@@ -83,7 +83,7 @@ header{
 .name{
     color: #1976D2;
     font-size: 12rem;
-    font-weight: normal;
+    font-weight: bold;
     font-family: 'Roboto', sans-serif;
     margin: 8rem auto;
     padding: 2rem;
@@ -95,7 +95,8 @@ a.name:visited{
 }
 .name span{
     color: #FF5722;
-    font-family: 'MuseoSans', sans-serif;
+    font-family: serif;
+    font-style: italic;
 }
 .opener{
     position: fixed;
@@ -213,7 +214,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2rem;    
+    padding: 2rem;
 }
 .card{
     display: flex;
@@ -362,7 +363,7 @@ footer{
         font-size: 5px;
     }
     body{
-        
+
     }
     .logo{
         margin: auto;
@@ -371,12 +372,12 @@ footer{
         display: none;
     }
     .mobile-menu{
-        
+
     }
 }
 @media (max-width:300px) and (orientation:landscape){
     body{
-        
+
     }
 }
 /* Media Rules For X-Large Devices */
@@ -385,7 +386,7 @@ footer{
         font-size: 12px;
     }
     body{
-        
+
     }
     .logo{
         margin: auto;
@@ -393,18 +394,18 @@ footer{
 }
 @media (min-width:2400px) and (orientation:landscape){
     body{
-        
+
     }
 }
 /* Media Rules For XX-Large Devices */
 @media (min-width:2400px) and (min-height:1200px){
     body{
-        
+
     }
 }
 @media (min-width:2400px) and(min-height:1200px) and (orientation:landscape){
     body{
-        
+
     }
 }
 
@@ -416,7 +417,7 @@ footer{
         font-size: 6px;
     }
     body{
-        
+
     }
     .logo{
         margin: auto;
@@ -428,12 +429,12 @@ footer{
         display: none;
     }
     .mobile-menu{
-        
+
     }
 }
 @media (min-width:301px) and (max-width:600px) and (orientation:landscape){
     body{
-        
+
     }
 }
 /* Media Rules For Tablet Devices */
@@ -442,18 +443,18 @@ footer{
         font-size: 7px;
     }
     body{
-        
+
     }
 }
 @media (min-width:601px) and (max-width:1000px) and (orientation:landscape){
     body{
-        
+
     }
 }
 /* Media Rules For Desktop Devices */
 @media (min-width:1001px) and (max-width:1400px){
     body{
-        
+
     }
 }
 /* Media Rules For Large Devices */
@@ -462,7 +463,7 @@ footer{
         font-size: 10px;
     }
     body{
-        
+
     }
     .logo{
         margin: auto;
