@@ -29,6 +29,9 @@ function SignUp() {
 			echo "SORRY...YOU ARE ALREADY REGISTERED USER...";
 		}
 	}
+	else{
+		echo "Please enter the Details";
+	}
 }
 
 if(isset($_POST['submit'])) {
