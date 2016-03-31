@@ -1,9 +1,4 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'u281253775_reg');
-define('DB_USER','u281253775_user');
-define('DB_PASSWORD','muneer@123.');
-$con=mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) or die("Failed to connect to MySQL: " . mysqli_connect_errno());
 
 function NewUser() {
 	$fullname = $_POST['name'];
@@ -12,7 +7,9 @@ function NewUser() {
 	$contact = $_POST['contact'];
 	$stream = $_POST['stream'];
 	$query = "INSERT INTO users (fullname,email,gender,contact,stream) VALUES ('$fullname','$email','$gender','$contact','$stream')";
+	$con = mysqli_connect("localhost","u281253775_user","muneer@123.","u281253775_reg") or die("Failed to connect to MySQL: " . mysqli_connect_errno());
 	$data = mysqli_query ($con,$query) or die(mysqli_connect_errno());
+	mysqli_close($con);
 	if($data) {
 		echo "YOUR REGISTRATION IS COMPLETED...";
 	}
