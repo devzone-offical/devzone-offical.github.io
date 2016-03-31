@@ -18,6 +18,7 @@ function NewUser() {
 function SignUp() {
 	if(!empty($_POST['email'])) //checking
 	{
+		$con = mysqli_connect("localhost","u281253775_user","muneer@123.","u281253775_reg") or die("Failed to connect to MySQL: " . mysqli_connect_errno())
 		$query = mysqli_query($con,"SELECT * FROM users WHERE email = '$_POST[email]'") or die(mysqli_connect_errno());
 		if(!$row = mysqli_fetch_array($query) or die(mysqli_connect_errno())){
 			NewUser();
@@ -25,6 +26,7 @@ function SignUp() {
 		else {
 			echo "SORRY...YOU ARE ALREADY REGISTERED USER...";
 		}
+		mysqli_close($con);
 	}
 	else{
 		echo "Please enter the Details";
@@ -32,7 +34,7 @@ function SignUp() {
 }
 
 if(isset($_POST['submit'])) {
-	NewUser();
+	SignUp();
 	echo "Submit Recived";
 }
 ?>
