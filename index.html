@@ -29,8 +29,8 @@
                     <a href="/#service" >SERVICE</a>
                     <a href="/#portfolio">PORTFOLIO</a>
                     <a href="/team.html">TEAM</a>
-                    <a href="/#contact">CONTACT</a>
                     <a href="/#register">REGISTER</a>
+                    <a href="/#contact">CONTACT</a>
                 </div>
             </header>
             <!-- header - end -->
@@ -102,12 +102,18 @@ believing that serving the best is best policy, we strive hard to bring the smil
                     </div>
                 </div>
                 <div class="content" id="register">
-                    <h1>CONTACT US</h1>
-                    <form class="join-form">
-                        <input type="text" name="fullname" placeholder="FULL NAME"/>
-                        <input type="email" name="emailid" placeholder="EMAIL ID"/>
-                        <textarea type="text" name="aboutjoin" placeholder="TELL US THE REASON BEHIND YOUR INTREST IN JOINING US."></textarea>
-                        <input type="submit" name="submit" value="JOIN" />
+                    <h1>JOIN US</h1>
+                    <form class="join-form" action="register.php">
+                        <input type="text" name="name" placeholder="FULL NAME"/>
+                        <input type="email" name="email" placeholder="EMAIL ID"/>
+			<span>
+				<input type="radio" name="gender" value="m" /><label for="m">MALE</label>
+					&nbsp;&nbsp;
+				<input type="radio" name="gender" value="f" /><label for="f">FEMALE</label>
+			</span>
+			<input type="tel" name="contact" placeholder="CONTACT NUMBER"/>
+                        <textarea type="text" name="stream" placeholder="TELL US YOUR STREAM OF INTREST"></textarea>
+                        <input type="submit" name="submit" value="submit" />
                     </form>
                 </div>
                 <div class="content" id="contact">
