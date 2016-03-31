@@ -35,7 +35,7 @@ function SignUp() {
 }
 
 if(isset($_POST['submit'])) {
-	SignUp();
+	NewUser();
 	echo "Submit Recived";
 }
 ?>
