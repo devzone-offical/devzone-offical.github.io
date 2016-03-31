@@ -11,7 +11,7 @@ function NewUser() {
 	$data = mysqli_query ($con,$query) or die(mysqli_connect_errno());
 	mysqli_close($con);
 	if($data) {
-		echo "YOUR REGISTRATION IS COMPLETED...";
+		echo "YOU HAVE SUCCESSFULLY REGISTERED WITH DEVZONE";
 	}
 }
 
@@ -34,7 +34,6 @@ function SignUp() {
 }
 
 if(isset($_POST['submit'])) {
-	SignUp();
-	echo "Submit Recived";
+	NewUser();
 }
 ?>
