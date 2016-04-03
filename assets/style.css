@@ -43,7 +43,7 @@ html{
 body{
     font-family: 'MuseoSans', sans-serif;
     color: #212121;
-    background-color: #FFFFFF;
+    background-color: #f2efe8;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -60,7 +60,7 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    background-image: url(images/header-bg-1.jpg);
+    background-image: url(images/header-bg-2.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +81,7 @@ header{
     to{opacity:1}
 }
 .name{
-    color: #1976D2;
+    color: #569af6;
     font-size: 12rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -94,7 +94,7 @@ a.name:visited{
     color: #1976D2;
 }
 .name span{
-    color: #FF5722;
+    color: #f6743d;
     font-family: serif;
     font-style: italic;
 }
@@ -115,9 +115,9 @@ a.name:visited{
     flex-direction: row;
     margin: auto;
     margin-top: 10rem;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #f2efe8;
     justify-content: space-between;
-    background-color: #FFF;
+    background-color: #f2efe8;
     z-index: 5;
 }
 .mobile-menu{
@@ -132,7 +132,7 @@ a.name:visited{
     justify-content: center;
     z-index: 5;
     border: 1px solid #E0E0E0;
-    background-color: #FFF;
+    background-color: #f2efe8;
 }
 .menu a{
     color: #FF5722;
@@ -197,17 +197,17 @@ section{
 }
 .content h1{
     font-size: 4rem;
-    color: #1976D2;
+    color: #f6743d;
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
 }
 .content p{
-    font-size: 3rem;
-    color: #FF5722;
+    font-size: 2.5rem;
+    color: #1976D2;
     text-align: justify;
     padding: 2rem;
-    line-height: 4rem;
+    line-height: 3.5rem;
 }
 .card-wrap{
     display: flex;
@@ -237,7 +237,7 @@ section{
     margin: auto;
     padding: 2rem;
     border: 2px solid #E0E0E0;
-    background-color: #FFFFFF;
+    background-color: #1976D2;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
@@ -245,8 +245,8 @@ section{
     width: 16rem;
 }
 .card div img{
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     padding: 2rem;
     margin: auto;
 }
