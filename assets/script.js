@@ -1,5 +1,8 @@
 
 function init() {
+  $(window).load(function() {
+    $('#loader').fadeOut("slow");
+  });
     window.addEventListener("load" , function(){check_events();});
     window.addEventListener("resize" , function(){check_events();});
     window.addEventListener("scroll", function(){scroll_check();});
@@ -8,18 +11,18 @@ function init() {
 function check_events(){
     scroll_check();
     size_check();
-    
+
 }
 var menu = document.getElementById("menu");
 function scroll_check(){
-    
+
     var menu = document.getElementById("menu");
     var opener = document.getElementById("opener");
     if(menu.offsetTop < document.body.scrollTop){
         menu.className = "mobile-menu";
         menu.style.display = "none";
-        opener.style.display = "block";        
-            
+        opener.style.display = "block";
+
     }
     else{
         if(window.innerWidth < 600){
@@ -36,7 +39,7 @@ function scroll_check(){
 }
 
 function size_check(){
-    
+
 }
 
 function open(){
