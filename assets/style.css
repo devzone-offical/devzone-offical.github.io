@@ -1,5 +1,6 @@
 /* Main Style */
 
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @font-face {
     font-family: 'MuseoSans';
@@ -37,19 +38,20 @@
 /* Root Element - Start */
 html{
     font-size: 8px;
+    cursor: default;
 }
 
 /* Body - Start */
 body{
-    font-family: 'MuseoSans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #212121;
-    background-color: #f2efe8;
+    background-color: #212121;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
-
+/*#f2efe8*/
 /* Container - Start */
 .container{
     display: flex;
@@ -60,10 +62,12 @@ body{
 header{
     display: flex;
     flex-direction: column;
-    background-image: url(images/header-bg-2.jpg);
+    background-image: url(images/header-bg-1.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #212121;
+    background-blend-mode: color-dodge;
 }
 .logo{
     margin-right: auto;
@@ -82,19 +86,20 @@ header{
 }
 .name{
     color: #569af6;
-    font-size: 12rem;
+    font-size: 15rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     margin: 8rem auto;
     padding: 2rem;
     animation: view 3s;
     text-decoration: none;
+    text-shadow: 1rem 2rem 1rem #212121;
 }
 a.name:visited{
     color: #1976D2;
 }
 .name span{
-    color: #f6743d;
+    color: #ff5722;
     font-family: serif;
     font-style: italic;
 }
@@ -115,10 +120,11 @@ a.name:visited{
     flex-direction: row;
     margin: auto;
     margin-top: 10rem;
-    border: 1px solid #f2efe8;
     justify-content: space-between;
-    background-color: #f2efe8;
+    background-color: #212121;
     z-index: 5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .mobile-menu{
     display: flex;
@@ -131,8 +137,8 @@ a.name:visited{
     padding: 2rem;
     justify-content: center;
     z-index: 5;
-    border: 1px solid #E0E0E0;
-    background-color: #f2efe8;
+    border: 1px solid #424242;
+    background-color: #212121;
 }
 .menu a{
     color: #FF5722;
@@ -143,12 +149,13 @@ a.name:visited{
     text-align: center;
     cursor: pointer;
     transition: background-color 0.5s;
+    border-radius: 3px;
 }
 .menu a:visited{
     color: #FF5722;
 }
 .menu a:hover{
-    background-color: #E0E0E0;
+    background-color: #424242;
 }
 .mobile-menu a{
     color: #FF5722;
@@ -157,16 +164,17 @@ a.name:visited{
     padding: 2rem;
     text-decoration: none;
     text-align: center;
+    border-radius: 3px;
 }
 .mobile-menu a:visited{
     color: #FF5722;
 }
 .mobile-menu a:hover{
-    background-color: #E0E0E0;
+    background-color: #424242;
 }
 .down{
     margin: 5rem auto;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #424242;
     border-radius: 40%;
     width: 5rem;
     height: 5rem;
@@ -178,7 +186,7 @@ a.name:visited{
     cursor: pointer;
 }
 .down:hover{
-    background-color: #E0E0E0;
+    background-color: #212121;
     opacity: 0;
 }
 /** Header - End **/
@@ -192,22 +200,27 @@ section{
 .content{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     opacity: 1;
 }
 .content h1{
     font-size: 4rem;
-    color: #f6743d;
-    text-align: center;
+    color: #ff5722;
     padding: 2rem;
     margin-top: 4rem;
+    border-bottom: 0.25rem solid #424242;
 }
 .content p{
     font-size: 2.5rem;
-    color: #1976D2;
+    color: #E8EAF6;
     text-align: center;
     padding: 2rem;
     line-height: 3.5rem;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 300;
 }
 .card-wrap{
     display: flex;
@@ -220,41 +233,44 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'MuseoSans',sans-serif;
     width: 35rem;
     min-width: 35rem;
-    min-height: 50rem;
+    min-height: 40rem;
     margin: 4rem;
     padding: 2rem;
     border-radius: 1rem;
-    border: 1px solid #E0E0E0;
-    transition: background-color 0.5s;
+    border: 0.25rem solid #212121;
+    background-color: #424242;
+    box-shadow: inset 0 0 1rem #212121;
+    transition: background-color 0.5s, box-shadow 0.5s, border 0.5s;
 }
 .card:hover{
-    background-color: #E0E0E0;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0.25rem solid #424242;
 }
 .card div{
     display: flex;
     margin: auto;
-    padding: 2rem;
-    border: 2px solid #E0E0E0;
-    background-color: #1976D2;
+    border: 0.25rem solid #424242;
+    background-color: none;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
-    height: 16rem;
-    width: 16rem;
+    height: 20rem;
+    width: 20rem;
 }
 .card div img{
-    height: 10rem;
-    width: 10rem;
-    padding: 2rem;
+    height: 20rem;
+    width: 20rem;
     margin: auto;
 }
 .card h2{
     font-size: 3rem;
     color: #FF5722;
     padding: 1rem;
-    margin: auto;
+    text-align: center;
 }
 .card p{
     font-size: 2rem;
@@ -265,20 +281,22 @@ section{
 }
 .circle{
     min-height: 40rem;
-    border: none;
+    border-color: #212121;
 }
-
+.stretch{
+  align-items: stretch;
+}
 .hover-card{
     display: flex;
     width: 30rem;
     min-width: 30rem;
     height: 25rem;
     margin: 4rem;
-    background-color: #E0E0E0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #212121;
+    border-radius: 2rem;
 }
 .hover-card div{
     display: flex;
@@ -287,8 +305,10 @@ section{
     justify-content: center;
     opacity: 0;
     cursor: pointer;
-    background-color: #E0E0E0;
+    background-color: #424242;
     transition: opacity 0.5s;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 1rem #212121;
 }
 .hover-card div:hover{
     opacity: 1;
@@ -301,7 +321,7 @@ section{
 .hover-card div p{
     font-size: 2rem;
     text-align: center;
-    color: #1976D2;
+    color: #E8EAF6;
 }
 .social{
     display: flex;
@@ -324,14 +344,17 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #E8EAF6;
 }
 .join-form input , textarea{
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem;
     height: 5rem;
     width: 80%;
     margin: 2rem;
-    border: 2px dashed #E0E0E0;
+    color: #E8EAF6;
+    border: 2px dashed #212121;
+    background-color: #424242;
 }
 .join-form textarea{
     height: 15rem;
@@ -355,6 +378,7 @@ section{
 /** Footer - Start **/
 footer{
     display: flex;
+    justify-content: flex-end;
     padding: 2rem;
     font-size: 2rem;
     background-color: #FF5722;
