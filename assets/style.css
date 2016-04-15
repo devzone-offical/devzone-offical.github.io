@@ -279,6 +279,26 @@ section{
     padding: 1rem;
     text-align: justify;
 }
+.card p a{
+    display: inline-block;
+    font-size: 3rem;
+    color: #E8EAF6;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 50%;
+}
+.fb{
+  background-image: url(images/facebook.svg);
+  background-size: contain;
+  background-position: center;
+}
+.gplus{
+  background-image: url(images/gplus.svg);
+  background-size: contain;
+  background-position: center;
+}
 .circle{
     min-height: 40rem;
     border-color: #212121;
