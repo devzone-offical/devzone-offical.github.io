@@ -6,7 +6,6 @@ if($link){
   $query = mysqli_query($link,$stmt);
   if($query){
     $result = mysqli_fetch_array($query);
-    echo $result;
     if($result == null){
       echo json_encode(["message"=>"Number Unavailable"]);
     }
